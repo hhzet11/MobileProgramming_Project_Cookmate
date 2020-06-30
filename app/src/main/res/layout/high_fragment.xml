@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/highContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/highPicture"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@drawable/ex1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/highPicture2"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@drawable/in"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/foodPicture"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@drawable/in"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="list 보기"
+            android:id="@+id/highButton"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_main_font"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

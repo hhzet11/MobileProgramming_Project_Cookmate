@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorBackGround"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/recipe"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+
+        android:fontFamily="@font/app_main_font"
+        android:gravity="center_horizontal"
+        android:text="COOK MATE"
+
+        android:textColor="#4D3125"
+        android:textColorHighlight="@color/colorBackGround"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

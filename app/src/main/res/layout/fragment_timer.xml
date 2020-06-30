@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#FFC19E">
+
+        <Button
+            android:id="@+id/button_start_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_countdown"
+            android:layout_centerHorizontal="true"
+            android:text="start"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_main_font"/>
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_countdown"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/button_start_pause"
+            android:text="reset"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/button_start_pause"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_main_font"/>
+        <Button
+            android:id="@+id/stop_ringtone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_countdown"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="11dp"
+            android:visibility="invisible"
+            android:text="stop alarm"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_main_font"/>
+        <Button
+            android:id="@+id/stt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_countdown"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="11dp"
+            android:text="stt"
+            android:visibility="invisible"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_main_font"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/myImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clock_1" />
+
+        <TextView
+            android:id="@+id/text_view_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@id/myImageView"
+            android:layout_alignTop="@id/myImageView"
+            android:layout_alignRight="@id/myImageView"
+            android:layout_alignBottom="@id/myImageView"
+            android:gravity="center"
+            android:text="00:00"
+            android:textSize="60sp" />
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

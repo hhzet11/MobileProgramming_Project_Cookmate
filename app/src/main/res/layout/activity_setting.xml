@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackGround">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#F29661"
+            android:id="@+id/settingText"
+            android:text="\n\n \t\t Settings"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/app_main_font"/>
+
+
+        <TextView
+            android:id="@+id/settingAlarm"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="알람 설정"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_main_font"
+            />
+
+        <TextView
+            android:id="@+id/settingCenter"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="고객 센터"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_main_font"
+            />
+
+        <TextView
+            android:id="@+id/settingInfo"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="앱 정보"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_main_font"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/home_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F29661"
+                android:text="홈"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/refrigerator_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F29661"
+                android:text="냉장고"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/recipe_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F29661"
+                android:text="레시피"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/setting_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F29661"
+                android:text="설정"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

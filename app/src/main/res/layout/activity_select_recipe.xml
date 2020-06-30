@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackGround">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/koreaContainer">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/korean"
+                    android:text="한식"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/app_main_font"/>
+                <ImageView
+                    android:id="@+id/koreanImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/korean"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/korea"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/westernContainer">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/Western"
+                    android:text="양식"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/app_main_font"/>
+                <ImageView
+                    android:id="@+id/WesternImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/Western"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/western"/>
+            </RelativeLayout>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/japaneseContainer">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/Japanese"
+                    android:text="일식"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/app_main_font"/>
+                <ImageView
+                    android:id="@+id/JapaneseImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/Japanese"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/japanese"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chineseContainer">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/Chinese"
+                    android:text="중식"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/app_main_font"/>
+                <ImageView
+                    android:id="@+id/ChineseImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/Chinese"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/chinese"/>
+            </RelativeLayout>
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/home_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F29661"
+                android:text="홈"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/refrigerator_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F29661"
+                android:text="냉장고"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/recipe_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F29661"
+                android:text="레시피"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/setting_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F29661"
+                android:text="설정"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

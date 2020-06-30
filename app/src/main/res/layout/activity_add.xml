@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:id="@+id/addd">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackGround"
+        >
+
+
+        <TextView
+            android:id="@+id/reName"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:background="#F29661"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_main_font"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/foodName"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="음식 이름: "
+            android:textSize="20dp"
+            android:layout_below="@+id/reName"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_main_font"/>
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:id="@+id/ingName"
+            android:hint="새우"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foodName"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_main_font"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/limit"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="유통기한: "
+            android:textSize="20dp"
+            android:layout_below="@+id/ingName"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_main_font"/>
+
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:id="@+id/ingU"
+            android:hint="2020-05-05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/limit"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_main_font"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/entity"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="음식 양: "
+            android:textSize="20dp"
+            android:layout_below="@+id/ingU"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_main_font"/>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/entity">
+
+            <EditText
+                android:id="@+id/ingAm"
+                android:text="1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/app_main_font"/>
+            <Button
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:layout_marginLeft="20dp"
+                android:text="+"
+                android:textSize="20dp"
+                android:id="@+id/plus"/>
+            <Button
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:layout_marginLeft="5dp"
+                android:text="-"
+                android:textSize="20dp"
+                android:id="@+id/minus"/>
+
+        </LinearLayout>
+        <!--
+    <TextView
+        android:id="@+id/position"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="저장 위치: "
+        android:textSize="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/editEntity"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/position"
+        android:layout_below="@+id/editEntity">
+        <RadioButton
+            android:id="@+id/refrigerator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="냉장"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"/>
+        <RadioButton
+            android:id="@+id/freezer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="냉동"
+            android:textSize="20dp"/>
+    </RadioGroup>
+-->
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/additionButtonPanel"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp">
+
+            <Button
+                android:id="@+id/initB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="저장완료"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/app_main_font"/>
+
+            <Button
+                android:id="@+id/returnB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="돌아가기"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/app_main_font"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
